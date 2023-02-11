@@ -20,15 +20,15 @@ for i in range(m):
 dist = [-1] * n
 Q = deque([])
 dist[0] = 0
-Q.append(0) # Q に 0 を追加（操作 1）
+Q.append(0)  # Q に 0 を追加（操作 1）
 
 # 幅優先探索
 while len(Q) >= 1:
-    pos = Q.popleft() # Q の先頭を調べ、これを取り出す（操作 2, 3）
+    pos = Q.popleft()  # Q の先頭を調べ、これを取り出す（操作 2, 3）
     for nex in G[pos]:
         if dist[nex] == -1:
             dist[nex] = dist[pos] + 1
-            Q.append(nex) # Q に nex を追加（操作 1）
+            Q.append(nex)  # Q に nex を追加（操作 1）
 
 # 頂点 1 から各頂点までの最短距離を出力
 for i in range(n):

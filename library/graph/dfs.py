@@ -18,24 +18,24 @@ for i in range(m):
 
 # 深さ優先探索の初期化
 visited = [False] * n
-S = deque([]) # スタック S を定義
+S = deque([])  # スタック S を定義
 visited[0] = True
-S.append(0) # S に 0 を追加
+S.append(0)  # S に 0 を追加
 
 # 深さ優先探索
 while len(S) >= 1:
-    pos = S.pop() # S の一番上を調べ、これを取り出す
+    pos = S.pop()  # S の一番上を調べ、これを取り出す
     for nex in G[pos]:
-        if visited[nex] == False:
+        if visited[nex] is False:
             visited[nex] = True
-            S.append(nex) # S に nex を追加
+            S.append(nex)  # S に nex を追加
 
 # 連結かどうかの判定（answer = true のとき連結）
 answer = True
 for i in range(n):
-    if visited[i] == False:
+    if visited[i] is False:
         answer = False
-if answer == True:
+if answer is True:
     print("the graph is connected.")
 else:
     print("The graph is not connected.")

@@ -1,6 +1,6 @@
 # 累積和
 # 計算量: ~O(N + Q)
-# URL: https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ai
+# https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_ai
 
 N, Q = map(int, input().split())
 A = list(map(int, input().split()))

@@ -9,7 +9,7 @@ H = list(map(int, input().split()))
 # 動的計画法
 dp = [None]*n
 dp[0] = 0
-for i in range(1,n):
+for i in range(1, n):
     if i == 1:
         dp[i] = abs(H[i-1] - H[i])
     if i >= 2:
