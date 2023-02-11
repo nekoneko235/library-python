@@ -1,12 +1,16 @@
 # 曜日の辞書を生成する
-week_days ={'Monday': '月曜日', 'Tuesday': '火曜日', 'Wednesday': '水曜日', 'Thursday': '木曜日', 'Friday': '金曜日', 'Saturday': '土曜日', 'Sunday': '日曜日'}
+week_days = {'Monday': '月曜日', 'Tuesday': '火曜日', 'Wednesday': '水曜日',
+             'Thursday': '木曜日', 'Friday': '金曜日',
+             'Saturday': '土曜日', 'Sunday': '日曜日'}
 print(week_days)
 
 # 空の辞書を生成
 empty = {}
 
 # dict()による辞書の生成
-week_days_list = [["Monday", "月曜日"], ["Tuesday", "火曜日"], ["Wednesday", "水曜日"], ["Thursday", "木曜日"], ["Friday", "金曜日"], ["Saturday", "土曜日"], ["Sunday", "日曜日"]]
+week_days_list = [["Monday", "月曜日"], ["Tuesday", "火曜日"],
+                  ["Wednesday", "水曜日"], ["Thursday", "木曜日"],
+                  ["Friday", "金曜日"], ["Saturday", "土曜日"], ["Sunday", "日曜日"]]
 week_days_dict = dict(week_days_list)
 print(week_days_dict)
 

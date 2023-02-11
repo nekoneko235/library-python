@@ -32,7 +32,7 @@ M = [input().split() for _ in range(n)]
 M = [0] * n
 
 # Initialize matrix
-M = [[0] * column for _ in range(row)]
+M = [[0] * 4 for _ in range(4)]
 
 # Initialize graph
 G = [list() for _ in range(n)]

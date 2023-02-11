@@ -14,6 +14,7 @@ def outer_function():
     # 内側の関数を変数として返す
     return inner_function
 
+
 func = outer_function()
 func()
 
@@ -22,6 +23,7 @@ func()
 # 外側のローカル変数を更新することが可能
 # nonlocalな変数は、戻り値の関数オブジェクトが利用される間
 # そこに実行時の値を保持することができる
+
 
 def outer_function():
     """ 外側の関数 """
@@ -35,6 +37,7 @@ def outer_function():
         print("実行回数：{}回".format(count))
 
     return inner_function
+
 
 # 関数オブジェクトを取得
 func1 = outer_function()

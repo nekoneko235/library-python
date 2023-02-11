@@ -3,6 +3,7 @@ import task
 import unittest
 from io import StringIO
 
+
 class TestClass(unittest.TestCase):
     def assertIO(self, input, expected):
         stdout, stdin = sys.stdout, sys.stdin
@@ -22,6 +23,7 @@ class TestClass(unittest.TestCase):
         input = """10"""
         expected = """1110"""
         self.assertIO(input, expected)
+
 
 if __name__ == "__main__":
     unittest.main()

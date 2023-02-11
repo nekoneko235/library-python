@@ -7,15 +7,20 @@
 val: int = 100
 text: str = "abcdefg"
 
+
 # 関数アノテーション
-def func(num: "数値", unit: "単位") -> "引数で指定された数値に単位をつけた文字列を返す":
+def func(num: "数値", unit: "単位") -> "a引数で指定された数値に単位をつけた文字列を返す":
     return str(num) + unit
+
 
 text = func(100, "円")
 print(text)
 
+
 # 型を記述する
 def func(num: int, unit: str) -> str:
     return str(num) + unit
+
+
 text = func(100, "円")
 print(text)

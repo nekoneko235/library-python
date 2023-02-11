@@ -5,7 +5,7 @@ for key in d.keys():
 
 # 辞書の値でループ処理
 d = {"key1": 100, "key2": 200, "key3": 300}
-for values in d.values():
+for value in d.values():
     print(value)
 
 # キーと値でループ処理
