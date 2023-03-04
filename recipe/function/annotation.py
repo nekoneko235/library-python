@@ -9,7 +9,7 @@ text: str = "abcdefg"
 
 
 # 関数アノテーション
-def func(num: '数値', unit: '単位') -> 'a引数で指定された数値に単位をつけた文字列を返す':
+def func(num: int, unit: str) -> str:
     return str(num) + unit
 
 
