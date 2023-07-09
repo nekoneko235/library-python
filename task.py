@@ -1,6 +1,7 @@
-def main():
-    return None
+def solver():
+    x = int(input())
+    print(x**4)
 
 
 if __name__ == "__main__":
-    main()
+    solver()
