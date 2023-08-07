@@ -36,3 +36,6 @@ M = [[0] * 4 for _ in range(4)]
 
 # Initialize graph
 G = [list() for _ in range(n)]
+
+# Print the number with 12 decimal places
+print(f"{100 / (n - 1):.12f}")
