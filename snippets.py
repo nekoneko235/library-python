@@ -1,3 +1,9 @@
+# PyPyで再帰を実装するときに必要
+# import sys
+# sys.setrecursionlimit(10 ** 9)
+# import pypyjit
+# pypyjit.set_param('max_unroll_recursion=-1')
+
 # Int variable
 n = int(input())
 
@@ -39,3 +45,7 @@ G = [list() for _ in range(n)]
 
 # Print the number with 12 decimal places
 print(f"{100 / (n - 1):.12f}")
+
+# Add a string to the end of the string
+s = "ELTE"
+s = "".join([s, " University"])
