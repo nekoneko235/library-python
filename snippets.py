@@ -1,3 +1,5 @@
+import numpy as np
+
 # PyPyで再帰を実装するときに必要
 # import sys
 # sys.setrecursionlimit(10 ** 9)
@@ -49,3 +51,7 @@ print(f"{100 / (n - 1):.12f}")
 # Add a string to the end of the string
 s = "ELTE"
 s = "".join([s, " University"])
+
+# Convert base 10 to base n number by using NumPy
+n = 1234
+n = np.base_repr(n, 2)
