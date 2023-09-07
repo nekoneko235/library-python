@@ -1,3 +1,5 @@
+import time
+
 import sympy as sp
 
 # 素数判定
@@ -14,6 +16,15 @@ def is_prime(N):
     return True
 
 
-# SymPyの素数判定(自作ライブラリより高速)
+# SymPy > Pure Python の順に高速
+time_start = time.time()
+x = is_prime(67280421310721)
+# x = sp.isprime(170141183460469231731687303715884105727)
+time_end = time.time()
+print(f"Time: {time_end - time_start:.3f} sec")
+
+time_start = time.time()
 x = sp.isprime(67280421310721)
-x = sp.isprime(170141183460469231731687303715884105727)
+# x = sp.isprime(170141183460469231731687303715884105727)
+time_end = time.time()
+print(f"Time: {time_end - time_start:.3f} sec")
