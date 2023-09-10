@@ -1,12 +1,5 @@
 import numpy as np
 
-# Pythonの再帰の上限を増やす
-# import sys
-# sys.setrecursionlimit(10 ** 9)
-# PyPyで再帰を実装するときに高速になる魔法
-# import pypyjit
-# pypyjit.set_param('max_unroll_recursion=-1')
-
 # Int variable
 n = int(input())
 

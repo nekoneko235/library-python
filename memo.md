@@ -131,3 +131,14 @@ max(a,c)      min(b,d)
 
 > CPython, Cython で5重forでTLE, PyPy でAC
 > https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_t
+
+> Pythonの再帰の上限を増やす
+```
+import sys
+sys.setrecursionlimit(10 ** 9)
+```
+> PyPyで再帰を実装するときに高速になる魔法(スタック(deque)を用いて実装したほうが高速)
+```
+import pypyjit
+pypyjit.set_param('max_unroll_recursion=-1')
+```
