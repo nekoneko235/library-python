@@ -3,7 +3,7 @@
 # 入力
 n, v = map(int, input().split())
 
-# 隣接リストの作成
+# 隣接リストの作成 (0-indexed)
 G = [list() for _ in range(n)]  # G[i] は頂点 i に隣接する頂点のリスト
 for i in range(v):
     a, b = map(int, input().split())
