@@ -128,3 +128,6 @@ a----------------b
     ↑            ↑
 max(a,c)      min(b,d)
 ```
+
+> CPython, Cython で5重forでTLE, PyPy でAC
+> https://atcoder.jp/contests/math-and-algorithm/tasks/math_and_algorithm_t
