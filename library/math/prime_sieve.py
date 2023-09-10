@@ -60,3 +60,9 @@ time_start = time.time()
 # print(primes)
 time_end = time.time()
 print(f"Time: {time_end - time_start:.3f} sec")
+
+
+# 11 - Print Prime Numbers - AtCoderだとPure Python >> NumPy >> SymPyの順に高速
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45430930
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45430957
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45430987

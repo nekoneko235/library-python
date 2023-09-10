@@ -28,3 +28,13 @@ x = sp.isprime(67280421310721)
 # x = sp.isprime(170141183460469231731687303715884105727)
 time_end = time.time()
 print(f"Time: {time_end - time_start:.3f} sec")
+
+# 011 - Print Prime Numbers - AtCoderだとPure Pythonの方が速い(SymPyは激遅TLE)
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45338049
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45338025
+
+# 012 - Primality Test - AtCoderだとPure Pythonの方が速い(SymPyは激遅)
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45338113
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45338098
+
+# Python (CPython 3.11.4) だと NumPy, SymPy で ある程度速度が出る

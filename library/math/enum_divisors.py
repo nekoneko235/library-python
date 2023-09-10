@@ -1,6 +1,5 @@
 import time
 
-import numpy as np
 import sympy as sp
 
 # 約数列挙
@@ -30,3 +29,9 @@ time_start = time.time()
 divs = sp.divisors(10**12)
 time_end = time.time()
 print(f"Time: {time_end - time_start:.3f} sec")
+
+# 013 - Divisor Enumeration - AtCoderだとPure Pythonの方が速い(SymPyは激遅TLE)
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45338215
+# https://atcoder.jp/contests/math-and-algorithm/submissions/45338196
+
+# Python (CPython 3.11.4) だと NumPy, SymPy で ある程度速度が出る
