@@ -142,3 +142,6 @@ sys.setrecursionlimit(10 ** 9)
 import pypyjit
 pypyjit.set_param('max_unroll_recursion=-1')
 ```
+
+> Pythonの場合はどんなに大きい整数も扱うことができるが、10^19より大きい数を扱うとなると、計算に時間がかかってしまう。
+> したがって、計算順序を変更するなど、実装の工夫を行うことが求められる

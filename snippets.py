@@ -1,5 +1,32 @@
 import numpy as np
 
+
+# Convert base 10 to base N number with 10 digits
+def convert_base10_to_baseN(n, base, width):
+    baseN = ""
+    while n > 0:
+        baseN = "".join([str(n % base), baseN])
+        n //= base
+
+    return baseN.zfill(width)
+
+
+# Convert base 2 to base 10 number
+def convert_base2_to_base10(base2):
+    base10 = 0
+    for i in range(len(base2)):
+        base10 += int(base2[i]) * 2 ** (len(base2) - i - 1)
+    return base10
+
+
+# Convert base 10 to base n number by using NumPy
+n = 1234
+n = np.base_repr(n, 2)
+
+# Convert base n to base 2 number by using NumPy
+n = 13
+n = np.binary_repr(n, 10)
+
 # Int variable
 n = int(input())
 
@@ -45,7 +72,3 @@ print(f"{100 / (n - 1):.12f}")
 # Add a string to the end of the string
 s = "ELTE"
 s = "".join([s, " University"])
-
-# Convert base 10 to base n number by using NumPy
-n = 1234
-n = np.base_repr(n, 2)
