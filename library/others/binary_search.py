@@ -18,6 +18,7 @@ def binary_search(arr, key):
             left = mid
 
     # 条件を満たす要素が存在しない場合は -1 を返却
+    # key以上の要素が存在しない場合は、rightは配列の長さのまま
     if right == len(arr) or arr[right] != key:
         return -1
 
@@ -26,7 +27,7 @@ def binary_search(arr, key):
 
 # 1から10^12までの整数の配列を生成
 arr = []
-for i in range(1, 10**8 + 1):
+for i in range(1, 10**12 + 1):
     arr.append(i)
 
 # 当然だが、二分探索の方が高速
@@ -40,5 +41,3 @@ a = [1, 2, 2, 2, 3, 4, 6]
 
 left_index = bisect.bisect_left(a, 2)
 right_index = bisect.bisect_right(a, 2)
-
-print(left_index, right_index)
