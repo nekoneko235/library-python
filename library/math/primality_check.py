@@ -6,9 +6,8 @@ import sympy as sp
 # 計算量：~O(sqrt(N))
 
 
+# 2以上の整数Nが素数かどうかを判定する
 def is_prime(N):
-    if N == 1:
-        return False
     LIMIT = int(N**0.5)
     for i in range(2, LIMIT + 1):
         if N % i == 0:
