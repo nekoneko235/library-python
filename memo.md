@@ -146,3 +146,12 @@ pypyjit.set_param('max_unroll_recursion=-1')
 
 > Pythonの場合はどんなに大きい整数も扱うことができるが、10^19より大きい数を扱うとなると、計算に時間がかかってしまう。
 > したがって、計算順序を変更するなど、実装の工夫を行うことが求められる
+
+> single_source_shortest_path_length より bfs_edges
+> all_neighbors より neighbors
+> DiGraph より Graph
+> https://atcoder.jp/contests/tessoku-book/submissions/45698806
+> https://atcoder.jp/contests/tessoku-book/submissions/45698841
+> https://atcoder.jp/contests/tessoku-book/submissions/45698954
+> https://atcoder.jp/contests/tessoku-book/submissions/45700439
+> https://atcoder.jp/contests/tessoku-book/submissions/45701706
