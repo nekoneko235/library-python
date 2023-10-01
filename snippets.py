@@ -1,5 +1,12 @@
 import numpy as np
 
+# BFS technique
+# deq = deque([(sy, sx)])
+# while deq:
+#     y, x = deq.popleft()
+#     for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+#         ny, nx = y + dy, x + dx
+
 
 # Convert base 10 to base N number with 10 digits
 def convert_base10_to_baseN(n, base, width):
@@ -32,6 +39,10 @@ n = int(input())
 
 # Int variables
 n, m = map(int, input().split())
+
+# Int variables with reducing 1
+sy, sx = map(lambda x: int(x) - 1, input().split())
+gy, gx = map(lambda x: int(x) - 1, input().split())
 
 # String variable
 s = input()
